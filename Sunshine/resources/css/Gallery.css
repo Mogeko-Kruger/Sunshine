@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.sideBar {
+    position: relative;
+    width: 13%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff
+}
+
+.verticalNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.verticalNav ul {
+    list-style-type: none;
+}
+
+.verticalNav a {
+    text-decoration: none;
+    color: #fff;
+    transition: ease 0.25s;
+}
+
+.verticalNav a:hover {
+    color: #a6a6a6;
+}
+
+.verticalNav li {
+    margin-bottom: 20px;
+}
+
+.navLinks {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 30px;
+    left: -32px;
+    right: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container .fab {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    top: 0%;
+    left: 13%;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "main main  bed       horizon    "
+    "main main  horizon2  landscape  "
+    "cabin beach     restaurant restaurant"
+    "bed2  beach2    restaurant restaurant";
+
+    height: 100vh;
+    width: 121vh;
+}
+
+.textOverImage {
+    position: relative;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 149, 255, 0.45);
+    color: #fff;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    height: 100%;
+    transition: ease 0.25s;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+} 
+
+.overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay:hover > * {
+    transform: translateY(0);
+}
+
+                /* grid items  */
+
+.grid {
+    position: relative;
+}
+
+.item-1 {
+    grid-area: main;
+    background-image:url(../images/josh-mclove1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-2 {
+    grid-area: bed;
+    background-image: url(../images/josh-mclove2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-3 {
+    grid-area: horizon;
+    background-image: url(../images/josh-mclove3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4 {
+    grid-area: horizon2;
+    background-image: url(../images/josh-mclove4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-5 {
+    grid-area: landscape;
+    background-image: url(../images/landscape.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-6 {
+    grid-area: cabin;
+    background-image: url(../images/josh-mclove6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-7 {
+    grid-area: beach;
+    background-image: url(../images/beach3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-8 {
+    grid-area: restaurant;
+    background-image: url(../images/josh-mclove5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-9 {
+    grid-area: beach2;
+    background-image: url(../images/beach.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-10 {
+    grid-area: bed2;
+    background-image: url(../images/bedroom.jpeg);
+    background-size: cover;
+    background-position: center;    
+}
+
